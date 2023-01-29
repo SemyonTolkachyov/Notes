@@ -3,6 +3,7 @@ using Notes.Application;
 using Notes.Application.Common.Mappings;
 using Notes.Application.Interfaces;
 using Notes.Persistence;
+using Notes.WebApi.Middleware;
 
 public class Startup
 {
@@ -41,6 +42,7 @@ public class Startup
             app.UseHsts();
         }
 
+        app.UseCustomExceptionHandler();
         app.UseRouting();
         app.UseHttpsRedirection();
         app.UseCors("AllowAll");
