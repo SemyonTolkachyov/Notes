@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notes.Identity", "Notes.Identity\Notes.Identity.csproj", "{642964CB-6897-49D5-8FC3-44B8E5B5C881}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{642964CB-6897-49D5-8FC3-44B8E5B5C881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642964CB-6897-49D5-8FC3-44B8E5B5C881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642964CB-6897-49D5-8FC3-44B8E5B5C881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642964CB-6897-49D5-8FC3-44B8E5B5C881}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
