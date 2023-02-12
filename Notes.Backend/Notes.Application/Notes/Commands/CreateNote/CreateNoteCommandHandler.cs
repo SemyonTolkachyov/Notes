@@ -9,7 +9,7 @@ public class CreateNoteCommandHandler : IRequestHandler<CreateNoteCommand, Guid>
     private readonly INotesDbContext _dbContext;
 
     public CreateNoteCommandHandler(INotesDbContext dbContext)
-        => _dbContext = _dbContext;
+        => _dbContext = dbContext;
     
     public async Task<Guid> Handle(CreateNoteCommand request,
         CancellationToken cancellationToken)
@@ -19,7 +19,7 @@ public class CreateNoteCommandHandler : IRequestHandler<CreateNoteCommand, Guid>
             UserId = request.UserId,
             Title = request.Title,
             Details = request.Details,
-            Id = new Guid(),
+            Id = Guid.NewGuid(),
             CreationDate = DateTime.Now,
             EditDate = null
         };
